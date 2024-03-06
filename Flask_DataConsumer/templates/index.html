@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="cards">
+    {% for data in data %}
+    <span>{{data['_id']}}</span>
+    <p>{{data['text']}}</p>
+    {% endfor %}
+</div>
+{% endblock content %}
